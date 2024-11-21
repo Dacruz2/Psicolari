@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+
+  .Pagina-agendamento {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  
+    .conteudo-agendamento {
+      position: relative;
+      width: 100%;
+      
+      img {
+        width: 100%;
+        height: 140vh;
+        object-fit: cover;
+      }
+  
+      h2 {
+        position: absolute;
+        top: 8vh;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        gap: 2000px;
+      }
+    }
+  
+    .dias {
+      display: inline-block;
+      
+      position: relative;
+      display: flex;
+      justify-content: center;
+      
+
+      gap: 2rem;
+      margin-top: -50rem;
+      margin-bottom: 10vh;
+  
+      h3 {
+        background-color: white;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border: 2px solid #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: #0000ff;
+          border: #000 solid 3px;
+        }
+      }
+    }
+  
+    .cliente-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: absolute;
+      top: 55vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 800px;
+    }
+  
+    .cliente-um,
+    .cliente-dois,
+    .cliente-tres {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 30px;
+      gap: 2rem;
+  
+      .perfil {
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        }
+      }
+  
+      h3 {
+        flex: 1;
+        white-space: nowrap;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .dias {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 20vh;
+  
+        h3 {
+          width: 80%;
+          text-align: center;
+        }
+      }
+  
+      .cliente-container {
+        width: 90%;
+        top: 40vh;
+      }
+  
+      .cliente-um,
+      .cliente-dois,
+      .cliente-tres {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+  
+        .perfil img {
+          width: 60px;
+          height: 60px;
+        }
+  
+        h3 {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .conteudo-agendamento {
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .dias h3 {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+      }
+  
+      .cliente-container {
+        width: 95%;
+        top: 35vh;
+      }
+  
+      .cliente-um,
+      .cliente-dois,
+      .cliente-tres {
+        padding: 0.8rem;
+  
+        .perfil img {
+          width: 50px;
+          height: 50px;
+        }
+  
+        h3 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }

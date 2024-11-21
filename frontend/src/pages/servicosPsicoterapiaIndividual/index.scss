@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+  
+  .pagina-servico  {
+    min-height: 180vh;
+  
+  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+  
+  
+    .cabeçalho {
+  
+  
+      background-color: #F5F4F4;
+      width: 100%;
+      height: 70px;
+      flex-direction: row;
+      display: flex;
+      
+  
+  
+      img {
+        width: 100px;
+        height: 60px;
+        margin-left: 7px;
+      }
+  
+      li {
+        list-style-type: none;
+  
+      }
+  
+      nav {
+        flex-direction: row;
+        display: flex;
+        gap: 15px;
+        margin-left: 510px;
+        align-items: center;
+  
+        font-size: 10px;
+      }
+  
+      .menu {
+  
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+  
+        img {
+          width: 40px;
+          height: 40px;
+          margin-left: 35px;
+        }
+  
+      }
+  
+    }
+  
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+       
+      }
+  
+      h1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 450px;
+  
+        color: #ffffff;
+        font-size: 1.5em;
+        text-align: center;
+        
+      }
+    }
+  
+    main {
+  
+      max-width: 800px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+  
+  
+      transform: translateX(34%);
+  
+  
+  
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 90px;
+  
+  
+      .card {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        padding: 20px;
+        background-color: rgba(189, 166, 166, 0.514);
+        margin-top: 50px;
+        border-radius: 30px;
+        justify-content: center;
+  
+      }
+  
+      .card1 {
+        background-color: rgba(189, 166, 166, 0.514);
+        color: #ffffff;
+        padding: 20px;
+        margin-top: 80px;
+        border-radius: 30px;
+  
+
+        img{
+          position: absolute;
+          z-index: 999999;
+          width: 130px;
+          height: auto;
+         left: 42%;
+         top: 46%;
+        }
+  
+  
+  
+        h3 {
+          color: #ffffff;
+          margin-top: 80px;
+        }
+  
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+  
+        li {
+          margin: 10px 0;
+        }
+  
+        
+  
+        
+      }
+  
+     
+      } button {
+      
+        background-color: rgba(189, 166, 166, 0.514);
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 18px;
+  
+        position: absolute;
+        bottom: 20px; 
+        right: 0px; 
+  
+        button:hover {
+          background-color: rgba(214, 205, 205, 0.911); 
+          color: #000;
+          cursor: pointer;
+        }
+    }
+  
+  
+  
+  }
