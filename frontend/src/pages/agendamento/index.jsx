@@ -7,8 +7,19 @@ export default function Agendamento(){
 
 return(
 <div className='Pagina-agendamento'>
-  <Cabecalho/>
-  
+<header className="header">
+    <img src="logo.png" alt="Psicolari Logo" className="logo" />
+    <nav className="nav">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#portfolio">PORTFÓLIO</a></li>
+        <li><a href="#contact">CONTATO</a></li>
+        <li><a href="#appointment">AGENDAMENTO</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
   <div className='conteudo-agendamento'>
     <img src="./assets/image/fundo-azul.png" alt="" />
     <h2>Selecione um dia</h2>

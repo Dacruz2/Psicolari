@@ -10,17 +10,18 @@ export default function ServicosPsicoterapiaIndividual() {
 
 
     <div className="pagina-servico">
-      <header className="cabeçalho">
-        <img src="./assets/image/logo.png" alt="logo" className="logo" />
-        <nav className="menu-opcoes">
-          <li><Link to={'/'}>HOME</Link></li>
-          <li><Link to={'/agendamento'}>AGENDAMENTO</Link></li>
-          <li><Link to={'/portifolio'}>PORTFOLIO</Link></li>
-          <li><Link to={'/serviços'}>SERVIÇOS</Link></li>
-        </nav>
-      </header>
-
-
+      <header className="header">
+    <img src="logo.png" alt="Psicolari Logo" className="logo" />
+    <nav className="nav">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#portfolio">PORTFÓLIO</a></li>
+        <li><a href="#contact">CONTATO</a></li>
+        <li><a href="#appointment">AGENDAMENTO</a></li>
+      </ul>
+    </nav>
+    
+  </header>
 
 
 
