@@ -40,13 +40,13 @@ export default function Secao1() {
                 <form>
 
                     <div className="input-group">
-                        <label >E-mail</label>
+                        
                         <input type="text" value={usuario} onChange={e => setusuario (e.target.value)} placeholder="Digite seu E-mail" required/>
                     </div>
 
                     <div className="input-group">
-                        <label >Senha</label>  
-                        <input type='text' value={senha} onChange={e => setsenha(e.target.value)} placeholder="Digite sua    Senha" required />
+                        
+                        <input type='text' value={senha} onChange={e => setsenha(e.target.value)} placeholder="Digite sua Senha" required />
                     </div>
                     <button onClick={Clicar} type="submit">Login</button>
                 </form>
