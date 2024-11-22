@@ -14,15 +14,19 @@ export default function Secao1() {
    
     const navigate = useNavigate();
    
-    async function Clicar() {
+    async function Clicar(e) {
+        e.preventDefault();
+
     let paramcorpo = {
-        "nome" : usuario,
-        "senha" : senha
+        "nome": usuario,
+        "senha": senha
     }
     
     
     const url = 'http://4.172.207.208:5011/valido'
     let resposta = await axios.post(url, paramcorpo);
+
+    console.log(resposta.data);
 
     const { token } = resposta.data;
 
@@ -48,7 +52,7 @@ export default function Secao1() {
                         
                         <input type='text' value={senha} onChange={e => setsenha(e.target.value)} placeholder="Digite sua Senha" required />
                     </div>
-                    <button onClick={Clicar} type="submit">Login</button>
+                    <button onClick={Clicar} type="button">Login</button>
                 </form>
             </div>
 
