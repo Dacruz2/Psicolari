@@ -10,13 +10,12 @@ export default function Portfolio() {
 <div className='Pagina-portfolio'>
     
 <header className="header">
-    <img src="logo.png" alt="Psicolari Logo" className="logo" />
+    <img src="./assets/image/logo.png" alt="Psicolari Logo" className="logo" />
     <nav className="nav">
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFÓLIO</a></li>
-        <li><a href="#contact">CONTATO</a></li>
-        <li><a href="#appointment">AGENDAMENTO</a></li>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/servicos">SERVIÇOS</a></li>
+        <li><a href="/agendamento">AGENDAMENTO</a></li>
       </ul>
     </nav>
     

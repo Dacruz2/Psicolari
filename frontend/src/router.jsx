@@ -18,7 +18,7 @@ export default function Navegacao () {
         <Routes>
           <Route path='/' element={<Secao1/>} />
           <Route path='/home' element={<App/>} />
-          <Route path='/home' element={<Servicos/>} />
+          <Route path='/servicos' element={<Servicos/>} />
           <Route path='/serviçosDeOrientacaoVocacional' element={<ServicosDeOrientacaoVocacional/>} />
           <Route path='/serviçosDeOrientacaoProfissional' element={<ServicosDeOrientacaoProfissional/>} />
           <Route path='/serviçosPsicoterapiaIndividual' element={<ServicosPsicoterapiaIndividual/>} />

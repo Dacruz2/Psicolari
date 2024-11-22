@@ -1,50 +1,43 @@
 
   .main-image {
       img {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 50%;
       }
       position: absolute;
 
     }
 
-  .main {
-    
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    .main-content {
-      margin: 20px;
-     
-      h1 {
-        font-size: 2rem;
-        color: #ffffff;
-      }
-
-      p {
-        font-size: 1.2rem;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .main {
+      flex: 1;
   
+      flex-direction: column;
+      align-items: center; // Centraliza horizontalmente
+      justify-content: center; // Centraliza verticalmente
+      text-align: center; // Centraliza o texto
+  padding-left: 10rem;
+      // Adicione uma altura mínima se necessário
+      min-height: 100vh; // Garante que a seção ocupe pelo menos a altura total da tela
+      min-width: 100vh;
+      margin: 0px;
+
+      h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+
+  
+      .main-content {
+          margin: 20px;
+  
+         
+          p {
+              font-size: 1.2rem;
+              color: #ffffff;
+              display: flex;
+              flex-direction: column;
+              align-items: center; // Centraliza o texto dentro do parágrafo
+              margin-top: 15px;
+          }
       }
-    }
-
-    
-  }
-
-  .footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-
-    p {
-      margin: 0;
-      color: #666;
-    }
   }

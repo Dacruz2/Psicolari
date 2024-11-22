@@ -9,16 +9,18 @@ export default function ServicosDeOrientacaoVocacional() {
   return (
 
     <div className="pagina-servico">
-      <header className="cabeçalho">
-        <img src="./assets/image/logo.png" alt="logo" className="logo" />
-        <nav className="menu-opcoes">
-          <li><Link to={'/'}>HOME</Link></li>
-          <li><Link to={'/agendamento'}>AGENDAMENTO</Link></li>
-          <li><Link to={'/portifolio'}>PORTFOLIO</Link></li>
-          <li><Link to={'/serviços'}>SERVIÇOS</Link></li>
-        </nav>
-      </header>
-
+     <header className="header">
+    <img src="./assets/image/logo.png" alt="Psicolari Logo" className="logo" />
+    <nav className="nav">
+      <ul>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/portifolio">PORTFÓLIO</a></li>
+        <li><a href="/servicos">SERVIÇOS</a></li>
+        <li><a href="/agendamento">AGENDAMENTO</a></li>
+      </ul>
+    </nav>
+    
+  </header>
 
       <div className='container'>
 

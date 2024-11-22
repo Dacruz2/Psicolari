@@ -1,7 +1,7 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 
-import Cabecalho from '../../components/cabecalho';
+
 
 export default function Agendamento(){
 
@@ -11,10 +11,9 @@ return(
     <img src="logo.png" alt="Psicolari Logo" className="logo" />
     <nav className="nav">
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFÓLIO</a></li>
-        <li><a href="#contact">CONTATO</a></li>
-        <li><a href="#appointment">AGENDAMENTO</a></li>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/portifolio">PORTFÓLIO</a></li>
+        <li><a href="/servicos">SERVIÇOS</a></li>
       </ul>
     </nav>
     
