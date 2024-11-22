@@ -21,7 +21,7 @@ export default function Secao1() {
     }
     
     
-    const url = 'http://localhost:5011/valido'
+    const url = 'http://4.172.207.208:5011/valido'
     let resposta = await axios.post(url, paramcorpo);
 
     const { token } = resposta.data;
